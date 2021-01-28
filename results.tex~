@@ -1,0 +1,32 @@
+\subsection{Simulation Result}
+In the simulation, the system with stage blocking are assigned to the name \textbf{"fifo"} whereas the system without stage blocking are assigned with the name \textbf{"ticket"}
+\subsubsection{System utilization rate}
+With $\lambda = 3$
+\noindent
+\begin{minipage}{\textwidth}
+    \includegraphics[width=\textwidth]{images/utilization_percentage.png}
+    \captionof{figure}{$L_Q$ = Utilization percentage of counters}\label{mean_queue_length}
+\end{minipage}
+
+\subsubsection{The average number of customers waiting in line}
+\noindent
+\begin{minipage}{\textwidth}
+    \includegraphics[width=\textwidth]{images/mean_queue_length.png}
+    \captionof{figure}{$L_Q$ = Average queue length}\label{mean_queue_length}
+\end{minipage}
+
+The simulation results in left diagram in \ref{mean_queue_length} shows that average queue length of \textbf{fifo} has the higher exponential rate of increase when arrival rate $\lambda$ increase compared to the \textbf{ticket} simulation. The right figure also showed similar results when the service rate $\mu$ decreases, customers in \textbf{fifo} system will have higher probability of facing longer queues.
+
+\subsection{Average time of a customer spend in the system}
+\noindent
+\begin{minipage}{\textwidth}
+    \includegraphics[width=\textwidth]{images/mean_time_in_system.png}
+    \captionof{figure}{$L_Q$ = Average time in system}\label{bar}
+\end{minipage}
+\subsection{Average time of a customer spend waiting}
+\noindent
+\begin{minipage}{\textwidth}
+    \includegraphics[width=\textwidth]{images/mean_waiting.png}
+    \captionof{figure}{$L_Q$ = Average time spend waiting}\label{bar}
+\end{minipage}
+\subsection{Little Laws}

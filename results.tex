@@ -1,2 +1,40 @@
-\subsection{result subtitle}
-\blindtext
+In the simulation, the system with stage blocking are assigned to the name \textbf{FIFO} whereas the system without stage blocking are assigned with the name \textbf{TICKET}
+\subsection{System utilization rate}
+With $\lambda = 3$, $\mu = 1.5$ we plot the graph of how the number of servers affect the efficiency of each server. \textbf{FIFO} system 
+
+\noindent
+\begin{minipage}{\textwidth}
+    \includegraphics[width=\textwidth]{images/utilization_percentage.png}
+    \captionof{figure}{$\rho$ = Relationship between number of counters and system utilization percentage}\label{utilization_percentage}
+\end{minipage}
+
+\subsection{The average number of customers waiting in line}
+
+The simulation results in left diagram in \ref{mean_queue_length} shows that average queue length of \textbf{FIFO} has the higher exponential rate of increase when arrival rate $\lambda$ increases compared to the \textbf{TICKET} system. The right graph also showed similar results when the service rate $\mu$ decreases, customers in \textbf{FIFO} system will have higher probability of facing longer queue. 
+
+Indeed, the \textbf{FIFO} system with blocking is observed to be more easily affected by the increase of arrival rate (i.e. lunch hour) or decrease of service rate (staff shortage).
+
+\noindent
+\begin{minipage}{\textwidth}
+    \includegraphics[width=\textwidth]{images/mean_queue_length.png}
+    \captionof{figure}{$L_Q$ = Average queue length}\label{mean_queue_length}
+\end{minipage}
+
+
+
+\subsection{Average time of a customer spend in the system}
+
+The average time of a customer spend in the system includes both queuing and service time. The simulation results shows similar conclusion where customers in  \textbf{FIFO} system has a higher probability of spending more time in the system.
+
+\noindent
+\begin{minipage}{\textwidth}
+    \includegraphics[width=\textwidth]{images/mean_time_in_system.png}
+    \captionof{figure}{$L_Q$ = Average time in system}\label{bar}
+\end{minipage}
+\subsection{Average time of a customer spend waiting}
+\noindent
+\begin{minipage}{\textwidth}
+    \includegraphics[width=\textwidth]{images/mean_waiting.png}
+    \captionof{figure}{$L_Q$ = Average time spend waiting}\label{bar}
+\end{minipage}
+\subsection{Little Laws}

@@ -1,0 +1,110 @@
+@article{Kohimprovemcd,
+  author  = {Koh,Hock Lye  and Teh,Su Yean  and Wong,Chin Keat  and Lim,Hooi Kie  and Migin,Melissa W. },
+  title   = {Improving queuing service at McDonald's},
+  journal = {AIP Conference Proceedings},
+  volume  = {1605},
+  number  = {1},
+  pages   = {1073-1078},
+  year    = {2014},
+  doi     = {10.1063/1.4887740},
+  url     = { 
+        https://aip.scitation.org/doi/abs/10.1063/1.4887740
+    }
+}
+@article{adan2002queueing,
+  title     = {Queueing theory},
+  author    = {Adan, Ivo and Resing, Jacques},
+  year      = {2002},
+  publisher = {Eindhoven University of Technology Eindhoven}
+}
+
+@misc{grayson,
+  title   = {team-simpy / simpy},
+  url     = {https://gitlab.com/team-simpy/simpy},
+  journal = {GitLab},
+  author  = {Grayson, Peter}
+}
+
+@article{ROY201629,
+  author   = {Roy, Debjit and Bandyopadhyay, Arindam and Banerjee, Pritam},
+  doi      = {10.1016/j.cor.2015.06.006},
+  issn     = {0305-0548},
+  journal  = {Computers \& Operations Research},
+  keywords = {Dine-in restaurant; Nested queues; Semi-open queuing networks; Throughput time},
+  pages    = {29--41},
+  title    = {A nested semi-open queuing network model for analyzing dine-in restaurant performance},
+  url      = {http://www.sciencedirect.com/science/article/pii/S0305054815001513},
+  volume   = {65},
+  year     = {2016}
+}
+
+@article{dharmawirya2012analysis,
+  title   = {Analysis of expected and actual waiting time in fast food restaurants},
+  author  = {Dharmawirya, Mathias and Oktadiana, Hera and Adi, Erwin},
+  journal = {Industial Engineering Letters},
+  volume  = {2},
+  number  = {5},
+  year    = {2012}
+}
+
+@incollection{PINSKY2011447,
+  address   = {Boston},
+  author    = {Pinsky, Mark A. and Karlin, Samuel},
+  booktitle = {An Introduction to Stochastic Modeling (Fourth Edition)},
+  doi       = {10.1016/B978-0-12-381416-6.00009-5},
+  edition   = {Fourth Edition},
+  editor    = {Pinsky, Mark A. and Karlin, Samuel},
+  isbn      = {978-0-12-381416-6},
+  pages     = {447--494},
+  publisher = {Academic Press},
+  title     = {9 - Queueing Systems},
+  url       = {http://www.sciencedirect.com/science/article/pii/B9780123814166000095},
+  year      = {2011}
+}
+
+@book{ross2014introduction,
+  title     = {Introduction to probability models},
+  author    = {Ross, Sheldon M},
+  year      = {2014},
+  publisher = {Academic press}
+}
+
+@article{AUSIXN200483,
+  doi      = {10.1016/S0378-3758(02)00398-1},
+  issn     = {0378-3758},
+  journal  = {Journal of Statistical Planning and Inference},
+  keywords = {Queues; Bayesian mixtures; Reversible jump MCMC; Phase-type distributions; Matrix geometric methods},
+  number   = {1},
+  pages    = {83--101},
+  title    = {Bayesian estimation for the M/G/1 queue using a phase-type approximation},
+  url      = {http://www.sciencedirect.com/science/article/pii/S0378375802003981},
+  volume   = {118},
+  year     = {2004}
+}
+
+@article{Langaristwostage,
+  issn      = {00219002},
+  url       = {http://www.jstor.org/stable/3214125},
+  author    = {C. Langaris},
+  journal   = {Journal of Applied Probability},
+  number    = {1},
+  pages     = {166--174},
+  publisher = {Applied Probability Trust},
+  title     = {The Waiting-Time Process of a Queueing System with Gamma-Type Input and Blocking},
+  volume    = {23},
+  year      = {1986}
+}
+
+@article{Gomez-Corral2002,
+  risfield_0_da = {2002/08/01},
+  abstract      = {Queueing networks with blocking have proved useful in modelling of data communications and production lines. We study such a network consisting of a sequence of two service stations with an infinite queue allowed before the first station and no intermediate queue allowed between them. This restriction results in the blocking of the first station whenever a unit having completed its service in that station cannot enter into the second one due to the presence of another unit there. The input of units to the network is the MAP (Markovian Arrival Process). At the first station, service requirements are of phase type whereas service times at the second station are arbitrarily distributed. The focus is on the embedded process at departures. The essential tool in our analysis is the general theory on Markov renewal processes of M/G/1-type.},
+  author        = {G{\'o}mez-Corral, A.},
+  doi           = {10.1023/A:1016235415066},
+  issn          = {1572-9443},
+  journal       = {Queueing Systems},
+  number        = {4},
+  pages         = {343--370},
+  title         = {A Tandem Queue with Blocking and Markovian Arrival Process},
+  volume        = {41},
+  year          = {2002}
+}
