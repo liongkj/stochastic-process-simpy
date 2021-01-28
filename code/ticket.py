@@ -4,8 +4,9 @@ import pandas as pd
 from numpy import random
 import math
 from helper import round_down
+import time
 
-counter_total_service_times = 0
+
 column_names = ["Arrival Time","Current Q Length","Q time","Service Start Time","Food prepare start","Exit system time","Food Prepare Duration","Total Wait Time(Queue+Food)","Service Time","Total Time in System"]
 
 class Counter(object):
@@ -16,7 +17,7 @@ class Counter(object):
         self.counter_waiting = 0
         
     def take_order(self,cus,env,service_start,parameters,data):
-        global counter_total_service_times
+        
 
         print("%s is placing order at counter %.2f" %(cus,service_start))
         time_taken_to_place_order = max(random.exponential(scale = parameters['order_time_mu']),parameters['order_time_min'])
@@ -24,7 +25,11 @@ class Counter(object):
         service_end = env.now
         print("Order of %s sent to kitchen at %.2f" %(cus, service_end))
         data[cus,8] = round_down(service_end-service_start)
-        counter_total_service_times += service_end-service_start
+        # if(cus<1000):
+        #     counter_total_service_times += service_end-service_start
+        # else:
+        #     print("stop")
+        #     time.sleep(10000)
 
     def receive_order(self,cus,env,kitchen,parameters,data):
         
@@ -76,7 +81,7 @@ def customer(env, label, queue, kitchen,parameters, data):
     data[label,5] = round_down(exit_time)
 
     # total wait time
-    data[label,7] = round_down(data[label,5]+data[label,1])
+    data[label,7] = round_down(data[label,6]+data[label,2])
     # total time in system
     data[label,9] = round_down(exit_time-arrive_time)
 
@@ -95,13 +100,17 @@ def startSimulation(n_customer,n_counter,n_kitchen,SIM_TIME,parameters):
     kitchen = Kitchen(env,n_kitchen)
     env.process(customer_arrivals(env,n_customer,counter,kitchen,parameters,result_ticket))
     env.run(until=SIM_TIME,)
+#     env.run(until=proc)
 
     labels = [*range(1,n_customer+1)]
     np_arr = np.array(result_ticket).reshape(n_customer,-1)
     df_ticket=pd.DataFrame(data = np_arr,index=labels,columns=column_names)
     df_ticket=df_ticket.drop(df_ticket[df_ticket.iloc[:,-1]==0].index,axis=0) # remove unfinished customer
+    df_ticket=df_ticket.iloc[:1000]
     total_wait_time = df_ticket.iloc[:,7].sum()
     total_service_time = df_ticket.iloc[:,8].sum()
     total_time_in_system = df_ticket.iloc[:,9].sum()
-    counter_total_idle_times = (SIM_TIME - total_service_time)
-    return df_ticket,total_wait_time,total_service_time,total_time_in_system,counter_total_service_times, counter_total_idle_times,SIM_TIME
+    counter_total_idle_times = (n_counter*SIM_TIME - total_service_time)
+    sim_time = df_ticket.iloc[:,5].max()
+    counter_total_service_times = (df_ticket.iloc[:,4] -  df_ticket.iloc[:,3]).sum()
+    return df_ticket,total_wait_time,total_service_time, total_time_in_system,counter_total_service_times, counter_total_idle_times,sim_time

@@ -32,26 +32,28 @@
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{aliascnt}
+\usepackage{pst-node}
+\usepackage{enumitem}
 
-
-\usepackage{natbib}
-\usepackage[backend=bibtex,style=verbose-trad2]{biblatex}
-\newcommand*{\urlprefix}{Available from: }
-\newcommand*{\urldateprefix}{Accessed }
-\renewcommand{\bibsection}{}
-
+\usepackage[nottoc]{tocbibind}
+\usepackage[square,sort,comma,numbers]{natbib}
 \makeatletter
 \newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
 \makeatother
 
+\usepackage{capt-of} %image caption
+\captionsetup[figure]{name={Fig.},labelsep=period}
+
+
 \usepackage{titlesec}
 \titleformat{\section}
     {\normalfont\fontsize{13}{17}\bfseries}{\thesection.}{1em}{\MakeUppercase}
-\titleformat{name=\section,numberless}
-    {\normalfont\fontsize{12}{15}\bfseries}{}{}{\MakeUppercase}
+% \titleformat{name=\section,numberless}
+%     {\normalfont\fontsize{12}{15}\bfseries}{}{}{\MakeUppercase}
 \titleformat{\subsection}
     {\normalfont\fontsize{12}{17}}{\thesubsection.}{1em}{}
-    
+   
+\providecommand{\keywords}[1]{\textbf{\textit{Keywords: }} #1} 
 \newaliascnt{eqfloat}{equation}
 \newfloat{eqfloat}{h}{eqflts}
 \floatname{eqfloat}{Equation}
@@ -120,7 +122,7 @@
 	%	citebordercolor=Violet,
 	%	filebordercolor=Red,
 	%	linkbordercolor=Blue
-}
+} %hyperlink styling
 
 \usepackage{geometry}
 \linespread{1.25}
@@ -133,42 +135,11 @@
 	top=2.5cm,
 	bottom=2.5cm,
 }
-
-
 \begin{document}
-\pagenumbering{gobble}
-\begin{center}
-	{\large SHANGHAI JIAO TONG UNIVERSITY}
-\end{center}
-%	\maketitle
-\vspace{6cm}
-
-\begin{center}
-
-	\Huge The analysis and simulation of queuing system in two fast food chain\\
-	\vspace{.5cm}
-	
-
-\end{center}
-\vspace{2.5cm}
-\begin{center}
-	\Large KhaiJiet Liong \\Advisor: JianHong Shi
-\end{center}
-
-\vspace{8cm}
-\begin{center}
-	{\large A final project report submitted in partial fulfillment of the \\course ICE-6502 }
-\end{center}
-
-\begin{center}
-	{\large August 2020}
-\end{center}
+\input{cover.tex}
 
 \newpage
-\pagenumbering{Roman}
-
-
-%\section*{List of Contents}
+\pagenumbering{Roman} %page numbering before main pages
 \tableofcontents
 \pagebreak
 \newpage
@@ -176,35 +147,22 @@
 \cleardoublepage\pagenumbering{arabic}
 
 
-\section*{Abstract}
-\input{abstract.tex}
-\pagebreak
-
-\section{Introduction}
 \input{introduction.tex}
-\pagebreak
 
 \section{Material and methods}
-\input{material-method.tex}
-\pagebreak
+\input{model.tex}
 
-\section{Results}
+\section{Results and Discussion}
 \input{results.tex}
-\pagebreak
-
-
-\section{Discussion}
-\input{discussion.tex}
 \pagebreak
 
 \section{Conclusion}
 \input{conclusion.tex}
 \pagebreak
 
-
-\section{References}
-\bibliography{irrbibfile}
-\bibliographystyle{ieeetr}
+% \section{References}
+\bibliography{ref}
+\bibliographystyle{plainnat}
 \pagebreak
 
 \pagenumbering{roman}

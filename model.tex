@@ -1,0 +1,96 @@
+\subsection{Model}
+The queuing model designed for the computer simulation describes the probabilistic nature of the two different queuing system. It allows mathematicians to use the constricted model to make predictions and study how an inefficient queuing system could affect customer experience (long waiting lines) and resource wastage (low utilization rate).
+Most of the queuing problem could be classified into three parts, which are the input process, the service distribution and the queue discipline \cite{PINSKY2011447}.
+
+A unlimited queuing simulation ($t_1,t_2,\dots,t_n$) will be carried out using a python package Simpy \cite{grayson} to simulate the restaurant operation hours.
+The following assumptions applied in the simulations are listed here and discuss in the corresponding sections:
+\begin{enumerate}[label=\alph*)]
+    \item Infinite calling population
+    \item First-come, first-served queue discipline
+    \item Poisson arrival rate, $\lambda$
+    \item Exponential service rate, $\mu_1,\mu_2$
+    \item Customers only buys one set of food
+    \item Customers does not queue after completing a purchase.
+    \item Kitchen chef can only prepare one set of food a time.
+    \item There is no waiting line between neighboring stages in the system with blocking.
+\end{enumerate}
+The following notation is used to represent the random variables associated with the model:
+\begin{align*}
+    N_q            & = \text{the number of customers in queue.}                             \\
+    N_s            & = \text{the number of customers receiving service.}                    \\
+    N              & = N_q +N_s = \text{the total number of customers in the system.}       \\\\
+    X_s            & = \text{the time of a customer spends in taking order.}                \\
+    X_k            & = \text{the time of a customer spends in waiting for food.}            \\
+    X              & = X_s + X_k =  \text{the time of a customer spends in actual service.} \\\\
+    T              & = W+X =\text{the total time a customer spend in the system.}           \\
+    \lambda        & = \text{the arrival rate (average number of arrivals/min)}             \\
+    \mu            & = \text{the service rate (average number served / min)}                \\
+    \textbf{c}     & = \text{the number of counter services in parallel}                    \\
+    \textbf{s}     & = \text{the number of cooks in the kitchen}                            \\
+    \textbf{n}     & = \text{the number of customer served}                                 \\
+    \textbf{S} & = \text{System}
+\end{align*}
+
+In Kendall's notation,
+
+\subsubsection{Model of Customer Population}
+The simulation also assumed the customer population in the model used in this supplement are  are infinite and patient, so they do not renege, balk or jockey to prevent the mathematical formula to become overly complex. Besides, the simulation will end when the the restaurant served 1000 customers ($N_{1000}$) the remaining customers will leave the system at once no matter which process they currently at. Therefore, the number of customer served will be only the ones who completed the whole process and the unfinished processes are discarded completely.
+\subsubsection{Waiting Line Model}
+In the experiment setting, the arrival rate of customers has a Poisson distribution with parameter $\lambda$, where each of them are allowed to only buy one set of food. Then, the customers will need to enter the waiting line with infinite N the customers can place order via \textbf{r} number of serving counters and the order is then sent to the kitchen to be prepared by \textbf{s} number of cooks. Each counter server and kitchen cook can only handle one task meal at a time, i.e. placing order and preparing food. Besides, the process of the customer placing order and kitchen preparing the meal are independent and has the exponential distribution with parameter $\mu$. The sequence of arrival process and placing order are all assumed to be mutually independent, with the two type of queuing system adopted: Thus, it is important to understand the different elements of a queuing system.
+
+The service system describes the characteristics of queue system, such as the number of waiting lines, the number of server and service patterns, etc. The two variables introduced in the experiment is the queue with blocking or without blocking at the second stage of service point (food collection) which typically arises from the problem of lacking queuing capacity between jobs \cite{Gomez-Corral2002}.
+ 
+The former model is called a single-line, multiple server, multi-stage tandem-queuing model system \cite{ross2014introduction} and the latter is a single-line, multiple server, multi-stage wait-queuing model (M/M/s) \cite{WU2019927}.
+
+\noindent
+\begin{minipage}{\textwidth}
+    \includegraphics[width=\textwidth]{images/queue_model_1.png}
+    \captionof{figure}{Single-phase line model (w/ blocking)}\label{fig:single-phase}
+\end{minipage}
+\begin{minipage}{\textwidth}
+    \includegraphics[width=\textwidth]{images/queue_model.png}
+    \captionof{figure}{Multi-phase line model (w/o blocking)}\label{fig:multi-phase}
+\end{minipage}
+\subsubsection{Model of Service System}
+In this project, we will study two types of queuing method, which are as follows:
+
+\begin{enumerate}[label=\roman*)]
+    \item $S_1$: Single line, Multi-server, Two-stage (w/ blocking) (\autoref{fig:single-phase}) \\
+          Scenario: Customer arrival rate follows the Poisson process with the parameter $\lambda$. The arrived customer has to pass through two consecutive service point before leaving the system. The customers will enter the only one waiting line with unlimited queue space at the first stage of serving point.
+          Then, the customer will enter one of the free \textbf{r} counters and place an order but because there is no waiting space at the second stage of serving point. So the customer will need to wait at the counter while the kitchen is preparing the food.
+
+          The kitchen will process the resources with the first-come,first-served priority rule. The counter serves the customer and takes the customer order where the service rate follows the exponential distribution of parameter $\mu$.
+
+          Next, the order is sent to the kitchen and the customer exits the system after they make the payment and receive the food.
+
+    \item $S_2$: Single line, Multi-server, Two-stage (w/o blocking) (\autoref{fig:multi-phase}) \\
+          Scenario: Customer arrival rate follows the Poisson process with the parameter $\lambda$;The arrived customer has to pass through two consecutive service point before leaving the system. The customers will enter the only one waiting line with unlimited queue space at the first stage of serving point.
+          Then, the customer will enter one of the free \textbf{r} counters and place an order but because there is no waiting space at the second stage of serving point. So the customer will need to wait at the counter while the kitchen is preparing the food.
+
+          The kitchen will process the resources with the first-come,first-served priority rule. The counter serves the customer and takes the customer order where the service rate follows the exponential distribution of parameter $\mu$.
+
+          After making the payment, the counter will send the order to the kitchen and starts to service the next customer whereas the customer proceeds to the collection area. The customer exits the system after they receive the food.
+\end{enumerate}
+
+\subsubsection{Model of Kitchen Process}
+The resources in the kitchen are cooks. We model the \textit{\textbf{s}} cooks as fixed resources.
+Once an item order arrives, it need to enter the order waiting queue, $\beta_{k}$ for a cook to be free.
+Once the order is assigned to the cook, the cook will start preparing the food next in queue and cannot be allocated to prepare other orders simultaneously. Thus, the food preparation time is modeled using the exponential distribution of parameter $\mu$.
+Once complete, the cook will send the food back to the counter and repeat the process.
+
+\subsection{Performance measure}
+The project focus on few metrics to analyze the queuing system performance and obtain a average performance measure. Before that, we create the following project scope and performance metrics to help us understand and identify any bottleneck found in the two systems.
+
+From the section above, we introduced that
+\begin{align*}
+    \lambda & =\text{ mean arrival rate} \\
+    \mu     & = \text{mean service rate}
+\end{align*}
+Now, we use Little's Law to derive the formula below:
+\begin{align*}
+    \rho & = \frac{\lambda}{c\mu} = \text{System utilization rate}.                                  \\
+    L_Q  & = \rho \dot L =\text{ Average number of customers waiting in line and its distribution.} \\
+    W    & = \frac{1}{\mu - \lambda}=\text{Average time of a customer spends in the system.}        \\
+    W_Q  & = \text{ Average time of a customer spend waiting.}
+\end{align*}
+The data findings allows us to understand the relationship between the number queuing method, average waiting time and system utilization percentage.

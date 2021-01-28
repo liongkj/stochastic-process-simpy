@@ -34,8 +34,8 @@ class Counter(object):
             yield env.process(resource.prepare_food(cus,env,data,parameters))
             service_end = env.now
             print("%s collected the food at %.2f" %(cus, service_end))
-           
-            counter_total_service_times += (service_end-service_start)
+            if(cus<1000):
+                counter_total_service_times += (service_end-service_start)
             
 
 class Kitchen(object):
@@ -79,7 +79,7 @@ def customer(env, label, queue, kitchen,parameters, data):
         data[label,5] = round_down(exit_time)
 
         # total wait time
-        data[label,7] = round_down(data[label,5]+data[label,1])
+        data[label,7] = round_down(data[label,6]+data[label,2])
         # total service time
         data[label,8] = round_down(exit_time-service_start)
         # total time in system
@@ -101,14 +101,16 @@ def startSimulation(n_customer,n_counter,n_kitchen,SIM_TIME,parameters):
     counter = Counter(env,n_counter)
     kitchen = Kitchen(env,n_kitchen)
     env.process(customer_arrivals(env,n_customer,counter,kitchen,parameters,result_fifo))
+#     env.run(proc)
     env.run(until=SIM_TIME)
-
     labels = [*range(1,n_customer+1)]
     np_arr = np.array(result_fifo).reshape(n_customer,-1)
     df_fifo=pd.DataFrame(data = np_arr,index=labels,columns=column_names)
     df_fifo=df_fifo.drop(df_fifo[df_fifo.iloc[:,9]==0].index,axis=0) # remove unfinished customer
+    df_fifo = df_fifo.iloc[:1000]
     total_wait_time = df_fifo.iloc[:,7].sum()
     total_service_time = df_fifo.iloc[:,8].sum()
     total_time_in_system = df_fifo.iloc[:,9].sum()
     total_counter_idle = df_fifo.iloc[:,6].sum()
-    return df_fifo,total_wait_time,total_service_time,total_time_in_system,counter_total_service_times, total_counter_idle,SIM_TIME
+    sim_time = df_fifo.iloc[-1,5]
+    return df_fifo,total_wait_time,total_service_time,total_time_in_system,counter_total_service_times, total_counter_idle,sim_time

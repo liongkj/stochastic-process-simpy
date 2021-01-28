@@ -1,20 +1,77 @@
-% $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
-% Do not modify the above lines!
-%
-% This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
-%
-\begingroup
-\makeatletter
-\@ifundefined{ver@biblatex.sty}
-  {\@latex@error
-     {Missing 'biblatex' package}
-     {The bibliography requires the 'biblatex' package.}
-      \aftergroup\endinput}
-  {}
-\endgroup
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\datalist[entry]{nty/global//global/global}\enddatalist
-\endinput
+\bibitem[Adan and Resing(2002)]{adan2002queueing}
+Ivo Adan and Jacques Resing.
+\newblock Queueing theory.
+\newblock 2002.
+
+\bibitem[Dharmawirya et~al.(2012)Dharmawirya, Oktadiana, and
+  Adi]{dharmawirya2012analysis}
+Mathias Dharmawirya, Hera Oktadiana, and Erwin Adi.
+\newblock Analysis of expected and actual waiting time in fast food
+  restaurants.
+\newblock \emph{Industial Engineering Letters}, 2\penalty0 (5), 2012.
+
+\bibitem[G{\'o}mez-Corral(2002)]{Gomez-Corral2002}
+A.~G{\'o}mez-Corral.
+\newblock A tandem queue with blocking and markovian arrival process.
+\newblock \emph{Queueing Systems}, 41\penalty0 (4):\penalty0 343--370, 2002.
+\newblock ISSN 1572-9443.
+\newblock \doi{10.1023/A:1016235415066}.
+
+\bibitem[Grayson()]{grayson}
+Peter Grayson.
+\newblock team-simpy / simpy.
+\newblock URL \url{https://gitlab.com/team-simpy/simpy}.
+
+\bibitem[Koh et~al.(2014)Koh, Teh, Wong, Lim, and Migin]{Kohimprovemcd}
+Hock~Lye Koh, Su~Yean Teh, Chin~Keat Wong, Hooi~Kie Lim, and Melissa~W. Migin.
+\newblock Improving queuing service at mcdonald's.
+\newblock \emph{AIP Conference Proceedings}, 1605\penalty0 (1):\penalty0
+  1073--1078, 2014.
+\newblock \doi{10.1063/1.4887740}.
+\newblock URL \url{https://aip.scitation.org/doi/abs/10.1063/1.4887740}.
+
+\bibitem[Pinsky and Karlin(2011)]{PINSKY2011447}
+Mark~A. Pinsky and Samuel Karlin.
+\newblock 9 - queueing systems.
+\newblock In Mark~A. Pinsky and Samuel Karlin, editors, \emph{An Introduction
+  to Stochastic Modeling (Fourth Edition)}, pages 447--494. Academic Press,
+  Boston, fourth edition edition, 2011.
+\newblock ISBN 978-0-12-381416-6.
+\newblock \doi{10.1016/B978-0-12-381416-6.00009-5}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/B9780123814166000095}.
+
+\bibitem[Ross(2014)]{ross2014introduction}
+Sheldon~M Ross.
+\newblock \emph{Introduction to probability models}.
+\newblock Academic press, 2014.
+
+\bibitem[Roy et~al.(2016)Roy, Bandyopadhyay, and Banerjee]{ROY201629}
+Debjit Roy, Arindam Bandyopadhyay, and Pritam Banerjee.
+\newblock A nested semi-open queuing network model for analyzing dine-in
+  restaurant performance.
+\newblock \emph{Computers \& Operations Research}, 65:\penalty0 29--41, 2016.
+\newblock ISSN 0305-0548.
+\newblock \doi{10.1016/j.cor.2015.06.006}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0305054815001513}.
+
+\bibitem[Wu et~al.(2019)Wu, Li, and Chu]{WU2019927}
+Xiaodan Wu, Juan Li, and Chao-Hsien Chu.
+\newblock Modeling multi-stage healthcare systems with service interactions
+  under blocking for bed allocation.
+\newblock \emph{European Journal of Operational Research}, 278\penalty0
+  (3):\penalty0 927--941, 2019.
+\newblock ISSN 0377-2217.
+\newblock \doi{10.1016/j.ejor.2019.05.004}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0377221719303881}.
+
+\end{thebibliography}

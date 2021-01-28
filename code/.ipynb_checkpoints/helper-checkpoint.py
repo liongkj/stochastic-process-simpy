@@ -6,12 +6,13 @@ def round_down(n, decimals=1):
     return abs(math.floor(n*multiplier + 0.5) / multiplier)
 
 def print_sim_results(results,n_kitchen,n_counter):
-    df_fifo,total_wait_time,total_service_time,total_time_in_system,counter_total_service_times, counter_total_idle_times,SIM_TIME =results
+    df_fifo,total_wait_time,total_service_time,total_time_in_system,counter_total_service_times, counter_total_idle_times,sim_time =results
     i = df_fifo.shape[0]
     print()
     print("%d Customers served"%i)
-    print("Total Simulation Time=> %.2f Minutes" % SIM_TIME)
+    print("Total Simulation Time=> %.2f Minutes" % sim_time)
     print("Total Idle Time for %d Counters=> %.2f Minutes" % (n_counter,counter_total_idle_times))
+    print("Total Service Time for %d Counters=> %.2f Minutes" % (n_counter,counter_total_service_times))
     
     print("Average Queue Length=> %d " % df_fifo.iloc[:,1].mean())
     print("Max Queue Length=> %d " % df_fifo.iloc[:,1].max())
