@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.19)  28 JAN 2021 20:33
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.19)  28 JAN 2021 23:55
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1013,6 +1013,9 @@ LaTeX Warning: Unused global option(s):
 
 LaTeX Warning: Label `bar' multiply defined.
 
+
+LaTeX Warning: Label `lst:code_direct' multiply defined.
+
 )
 \openout1 = main.aux
 
@@ -1227,7 +1230,7 @@ LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
 ) (./model.tex [1
 
 ] [2]
-<images/queue_model_1.png, id=140, 741.77126pt x 240.9pt>
+<images/queue_model_1.png, id=150, 741.77126pt x 240.9pt>
 File: images/queue_model_1.png Graphic file (type png)
 <use images/queue_model_1.png>
 Package luatex.def Info: images/queue_model_1.png  used on input line 47.
@@ -1238,7 +1241,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 48.
 See the caption package documentation for explanation.
 
-<images/queue_model.png, id=141, 1478.52374pt x 443.6575pt>
+<images/queue_model.png, id=151, 1478.52374pt x 443.6575pt>
 File: images/queue_model.png Graphic file (type png)
 <use images/queue_model.png>
 Package luatex.def Info: images/queue_model.png  used on input line 51.
@@ -1256,90 +1259,93 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 45--54
 [3<./images/queue_model_1.png><./images/queue_model.png>]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 76.
-) (./results.tex
-[4]
-<images/utilization_percentage.png, id=164, 433.62pt x 289.08pt>
+ [4]) (./results.tex
+<images/utilization_percentage.png, id=174, 433.62pt x 289.08pt>
 File: images/utilization_percentage.png Graphic file (type png)
 <use images/utilization_percentage.png>
-Package luatex.def Info: images/utilization_percentage.png  used on input line 7
-.
+Package luatex.def Info: images/utilization_percentage.png  used on input line 3
+4.
 (luatex.def)             Requested size: 412.56497pt x 275.0567pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 8.
+(caption)                particular \caption on input line 35.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 5--10
+Overfull \hbox (30.0pt too wide) in paragraph at lines 32--37
 $[]$ 
  []
 
-<images/mean_queue_length.png, id=166, 722.7pt x 361.35pt>
+[5]
+<images/mean_queue_length.png, id=183, 722.7pt x 361.35pt>
 File: images/mean_queue_length.png Graphic file (type png)
 <use images/mean_queue_length.png>
-Package luatex.def Info: images/mean_queue_length.png  used on input line 19.
+Package luatex.def Info: images/mean_queue_length.png  used on input line 46.
 (luatex.def)             Requested size: 412.56497pt x 206.28041pt.
 
+
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 20.
+(caption)                particular \caption on input line 47.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 17--22
+Overfull \hbox (30.0pt too wide) in paragraph at lines 44--49
 $[]$ 
  []
 
-[5<./images/utilization_percentage.png>]
-<images/mean_time_in_system.png, id=175, 722.7pt x 361.35pt>
+[6<./images/utilization_percentage.png><./images/mean_queue_length.png>]
+<images/mean_time_in_system.png, id=193, 722.7pt x 361.35pt>
 File: images/mean_time_in_system.png Graphic file (type png)
 <use images/mean_time_in_system.png>
-Package luatex.def Info: images/mean_time_in_system.png  used on input line 31.
+Package luatex.def Info: images/mean_time_in_system.png  used on input line 58.
 (luatex.def)             Requested size: 412.56497pt x 206.28041pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 32.
+(caption)                particular \caption on input line 59.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 29--34
+Overfull \hbox (30.0pt too wide) in paragraph at lines 56--61
 $[]$ 
  []
 
-<images/mean_waiting.png, id=176, 722.7pt x 361.35pt>
+<images/mean_waiting.png, id=195, 722.7pt x 361.35pt>
 File: images/mean_waiting.png Graphic file (type png)
 <use images/mean_waiting.png>
-Package luatex.def Info: images/mean_waiting.png  used on input line 37.
+Package luatex.def Info: images/mean_waiting.png  used on input line 67.
 (luatex.def)             Requested size: 412.56497pt x 206.28041pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 38.
+(caption)                particular \caption on input line 68.
 See the caption package documentation for explanation.
 
+) [7<./images/mean_time_in_system.png><./images/mean_waiting.png>] (./ack.tex)
+(./conclusion.tex) [8] (./main.bbl
+LaTeX Font Info:    Trying to load font information for TU+pcr on input line 39.
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 35--40
-$[]$ 
- []
-
-[6<./images/mean_queue_length.png><./images/mean_time_in_system.png>]) [7<./imag
-es/mean_waiting.png>] (./conclusion.tex) [8] (./main.bbl
-LaTeX Font Info:    Trying to load font information for TU+pcr on input line 30.
-
-LaTeX Font Info:    No file TUpcr.fd. on input line 30.
+LaTeX Font Info:    No file TUpcr.fd. on input line 39.
 
 
 LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 30.
+(Font)              using `TU/lmr/m/n' instead on input line 39.
 
-) [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
+) [9] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
+put line 179.
+
+(./code/fifo.py [1] [2]) (./code/ticket.py [3] [4])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EF60019990FE43F0AF7B6C6C3E8E6AB6;2970.
+(rerunfilecheck)             Checksum: 9504553E3413540DC5DAFBD162134A4F;3204.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1347,36 +1353,38 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27217 strings out of 480991
- 100000,1144653 words of node,token memory allocated
- 631 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 17 attribute, 70 glue_spec
-, 10 attribute_list, 1 write, 3 pdf_action nodes
-   avail lists: 1:2,2:739,3:196,4:66,5:198,6:32,7:3772,8:80,9:294,10:12,11:277
- 43749 multiletter control sequences out of 65536+600000
- 73 fonts using 9601883 bytes
- 46i,10n,79p,1192b,483s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></
-usr/share/fonts/msttcore/times.ttf></usr/share/texlive/texmf-dist/fonts/opentype
-/public/lm/lmsans10-oblique.otf></usr/share/texlive/texmf-dist/fonts/opentype/pu
-blic/lm/lmsans10-boldoblique.otf></usr/share/texlive/texmf-dist/fonts/opentype/p
-ublic/lm/lmsans9-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/publi
-c/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/l
-m/lmsans10-bold.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsa
-ns17-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans1
-2-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (11 pages, 263938 bytes).
+ 27752 strings out of 480991
+ 381565,1373583 words of node,token memory allocated
+ 607 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 13 attribute, 70 glue_spec
+, 8 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:8,2:13766,3:218,4:6765,5:6206,6:59,7:13661,8:84,9:18612,10:39,
+11:968
+ 44002 multiletter control sequences out of 65536+600000
+ 74 fonts using 9733571 bytes
+ 46i,10n,80p,1192b,1146s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></us
+r/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/
+share/fonts/msttcore/times.ttf></usr/share/texlive/texmf-dist/fonts/opentype/pub
+lic/lm/lmsans10-oblique.otf></usr/share/texlive/texmf-dist/fonts/opentype/public
+/lm/lmsans10-boldoblique.otf></usr/share/texlive/texmf-dist/fonts/opentype/publi
+c/lm/lmsans9-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm
+/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lm
+sans10-bold.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans17
+-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans12-re
+gular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (16 pages, 306950 bytes).
 
-PDF statistics: 289 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 131072)
- 137 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 574 PDF objects out of 1000 (max. 8388607)
+ 504 compressed objects within 6 object streams
+ 295 named destinations out of 1000 (max. 131072)
+ 145 words of extra memory for PDF output out of 10000 (max. 100000000)
 

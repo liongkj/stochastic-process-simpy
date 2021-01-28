@@ -1,11 +1,38 @@
 In the simulation, the system with stage blocking are assigned to the name \textbf{FIFO} whereas the system without stage blocking are assigned with the name \textbf{TICKET}
 \subsection{System utilization rate}
-With $\lambda = 3$, $\mu = 1.5$ we plot the graph of how the number of servers affect the efficiency of each server. \textbf{FIFO} system 
+With $\lambda = 3$, $\mu = 1.5$ we plot the graph of how the number of servers affect the efficiency of each server. We can observe that \textbf{FIFO} system has lower utilization percentage (high idle times) because of the blocking mechanism at the second stage. The server resource is idle but it is blocked therefore it cannot process take order from another customer. In business context, this idling duration translates to business cost. Thus, the \textbf{TICKET} system with a waiting line in between the two stages can eventually maximize the resource utilization hence reaching the goal of 1000 customers served about 40\% faster compared to \textbf{FIFO}. 
+
+The results are tabulated in table \ref{Tab:MainResults} with the parameters, $\lambda = 2, \mu_1 = 2 $ and $\mu_2 = 2$ 
+
+
+	\begin{table}[ht]
+		\caption{Simulations results with n = 1000}
+		\begin{center}
+ \begin{tabular}{|c|c|c|}
+ 	\hline
+ 	& \textbf{FIFO} & \textbf{TICKET}\\
+ 	\hline
+ 	Total Simulation Time & 909 & 513 \\
+ 	\hline
+ 	Average Queue Length & 223 & 5 \\
+ 	\hline
+ 	Max Queue Length (min) & 450 & 27 \\
+ 	\hline
+ 	Average Waiting Time (min) & 205 & 4.65 \\
+ 	\hline
+ 	Average Service Time (min) & 4.5 & 4.51 \\
+ 	\hline
+ 	Average Time Spent in System (min) & 207.33 & 8.51 \\
+ 	\hline
+ \end{tabular}
+\label{Tab:MainResults}
+\end{center}
+\end{table}
 
 \noindent
 \begin{minipage}{\textwidth}
     \includegraphics[width=\textwidth]{images/utilization_percentage.png}
-    \captionof{figure}{$\rho$ = Relationship between number of counters and system utilization percentage}\label{utilization_percentage}
+    \captionof{figure}{$\rho$ = Relationship between $\lambda$ and system utilization percentage}\label{utilization_percentage}
 \end{minipage}
 
 \subsection{The average number of customers waiting in line}
@@ -32,9 +59,11 @@ The average time of a customer spend in the system includes both queuing and ser
     \captionof{figure}{$L_Q$ = Average time in system}\label{bar}
 \end{minipage}
 \subsection{Average time of a customer spend waiting}
+
+The average time of a customer spend waiting includes both queuing and food collection process. The simulation results shows similar conclusion where customers in  \textbf{FIFO} system has a higher probability of spending more time waiting which is also observed in the simulation results compiled in table \ref{Tab:MainResults}.
+
 \noindent
 \begin{minipage}{\textwidth}
     \includegraphics[width=\textwidth]{images/mean_waiting.png}
     \captionof{figure}{$L_Q$ = Average time spend waiting}\label{bar}
 \end{minipage}
-\subsection{Little Laws}

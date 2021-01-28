@@ -1,9 +1,18 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abdullah et~al.(2015)Abdullah, Mokhtar, Bakar, and
+  Al-Kubaisy]{abdullah2015trend}
+Nik~Nairan Abdullah, Mazlin~Mohamad Mokhtar, Mohd Harriszamani~Abu Bakar, and
+  Waqar Al-Kubaisy.
+\newblock Trend on fast food consumption in relation to obesity among selangor
+  urban community.
+\newblock \emph{Procedia-Social and Behavioral Sciences}, 202:\penalty0
+  505--513, 2015.
 
 \bibitem[Adan and Resing(2002)]{adan2002queueing}
 Ivo Adan and Jacques Resing.
