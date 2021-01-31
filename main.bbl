@@ -1,86 +1,496 @@
-\begin{thebibliography}{10}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem[Abdullah et~al.(2015)Abdullah, Mokhtar, Bakar, and
-  Al-Kubaisy]{abdullah2015trend}
-Nik~Nairan Abdullah, Mazlin~Mohamad Mokhtar, Mohd Harriszamani~Abu Bakar, and
-  Waqar Al-Kubaisy.
-\newblock Trend on fast food consumption in relation to obesity among selangor
-  urban community.
-\newblock \emph{Procedia-Social and Behavioral Sciences}, 202:\penalty0
-  505--513, 2015.
 
-\bibitem[Adan and Resing(2002)]{adan2002queueing}
-Ivo Adan and Jacques Resing.
-\newblock Queueing theory.
-\newblock 2002.
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{adan2002queueing}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4f0e4f0d5483e2f5942e20f9f12f7b7d}{%
+           family={Adan},
+           familyi={A\bibinitperiod},
+           given={Ivo},
+           giveni={I\bibinitperiod}}}%
+        {{hash=110177fc51e803c316c78a54dadab243}{%
+           family={Resing},
+           familyi={R\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Eindhoven University of Technology Eindhoven}%
+      }
+      \strng{namehash}{32b99710af04558b2b5aaff84e0b6d7c}
+      \strng{fullhash}{32b99710af04558b2b5aaff84e0b6d7c}
+      \strng{bibnamehash}{32b99710af04558b2b5aaff84e0b6d7c}
+      \strng{authorbibnamehash}{32b99710af04558b2b5aaff84e0b6d7c}
+      \strng{authornamehash}{32b99710af04558b2b5aaff84e0b6d7c}
+      \strng{authorfullhash}{32b99710af04558b2b5aaff84e0b6d7c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Queueing theory}
+      \field{year}{2002}
+    \endentry
+    \entry{ROY201629}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c121d6a2186a1f979cc98d47e8da3618}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={Debjit},
+           giveni={D\bibinitperiod}}}%
+        {{hash=839aa8ebcc6bffb9e04c9ba485079ee9}{%
+           family={Bandyopadhyay},
+           familyi={B\bibinitperiod},
+           given={Arindam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5f050e445cc3482625054531c8d9b223}{%
+           family={Banerjee},
+           familyi={B\bibinitperiod},
+           given={Pritam},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac5d3c920a38873d29f453aa75eadaad}
+      \strng{fullhash}{ac5d3c920a38873d29f453aa75eadaad}
+      \strng{bibnamehash}{ac5d3c920a38873d29f453aa75eadaad}
+      \strng{authorbibnamehash}{ac5d3c920a38873d29f453aa75eadaad}
+      \strng{authornamehash}{ac5d3c920a38873d29f453aa75eadaad}
+      \strng{authorfullhash}{ac5d3c920a38873d29f453aa75eadaad}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0305-0548}
+      \field{journaltitle}{Computers \& Operations Research}
+      \field{title}{A nested semi-open queuing network model for analyzing dine-in restaurant performance}
+      \field{volume}{65}
+      \field{year}{2016}
+      \field{pages}{29\bibrangedash 41}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.cor.2015.06.006
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0305054815001513
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0305054815001513
+      \endverb
+      \keyw{Dine-in restaurant; Nested queues; Semi-open queuing networks; Throughput time}
+    \endentry
+    \entry{dharmawirya2012analysis}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4c7f85b486c3dba9f01e0f0f91312a19}{%
+           family={Dharmawirya},
+           familyi={D\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1c979da3bd395e4d167d963d5e3b9244}{%
+           family={Oktadiana},
+           familyi={O\bibinitperiod},
+           given={Hera},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b52ad7453057e02ee1583a1b8dc46446}{%
+           family={Adi},
+           familyi={A\bibinitperiod},
+           given={Erwin},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4773646ab6c036da8bcb0cb07a5ca5b}
+      \strng{fullhash}{a4773646ab6c036da8bcb0cb07a5ca5b}
+      \strng{bibnamehash}{a4773646ab6c036da8bcb0cb07a5ca5b}
+      \strng{authorbibnamehash}{a4773646ab6c036da8bcb0cb07a5ca5b}
+      \strng{authornamehash}{a4773646ab6c036da8bcb0cb07a5ca5b}
+      \strng{authorfullhash}{a4773646ab6c036da8bcb0cb07a5ca5b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Industial Engineering Letters}
+      \field{number}{5}
+      \field{title}{Analysis of expected and actual waiting time in fast food restaurants}
+      \field{volume}{2}
+      \field{year}{2012}
+    \endentry
+    \entry{abdullah2015trend}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f3e06825445904c23f6895c18bfd7d16}{%
+           family={Abdullah},
+           familyi={A\bibinitperiod},
+           given={Nik\bibnamedelima Nairan},
+           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=6c6e455aa8f5246c7f7f30ed6053e529}{%
+           family={Mokhtar},
+           familyi={M\bibinitperiod},
+           given={Mazlin\bibnamedelima Mohamad},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7526c14bd5540c137510bf63fccea859}{%
+           family={Bakar},
+           familyi={B\bibinitperiod},
+           given={Mohd\bibnamedelimb Harriszamani\bibnamedelima Abu},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b287459626eab55d535bb8327395022b}{%
+           family={Al-Kubaisy},
+           familyi={A\bibinithyphendelim K\bibinitperiod},
+           given={Waqar},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ff96205af86dcaf9a863f60b69054676}
+      \strng{fullhash}{35597bc3ead7eece8cba211d6f51fd4f}
+      \strng{bibnamehash}{ff96205af86dcaf9a863f60b69054676}
+      \strng{authorbibnamehash}{ff96205af86dcaf9a863f60b69054676}
+      \strng{authornamehash}{ff96205af86dcaf9a863f60b69054676}
+      \strng{authorfullhash}{35597bc3ead7eece8cba211d6f51fd4f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Procedia-Social and Behavioral Sciences}
+      \field{title}{Trend on fast food consumption in relation to obesity among Selangor urban community}
+      \field{volume}{202}
+      \field{year}{2015}
+      \field{pages}{505\bibrangedash 513}
+      \range{pages}{9}
+    \endentry
+    \entry{Kohimprovemcd}{article}{}
+      \name{author}{5}{}{%
+        {{hash=dc6c611a818dc1ef05283223fb21bc91}{%
+           family={Koh},
+           familyi={K\bibinitperiod},
+           given={Hock\bibnamedelima Lye},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=0290e81e75128e4ac2cf261d0621a7af}{%
+           family={Teh},
+           familyi={T\bibinitperiod},
+           given={Su\bibnamedelima Yean},
+           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=85c4d3616def60c5926641e4f4188c10}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Chin\bibnamedelima Keat},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=766a7557571974b4ff583a6dc2548e82}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Hooi\bibnamedelima Kie},
+           giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=3b1883e79598aad4a2c93f3368f57c48}{%
+           family={Migin},
+           familyi={M\bibinitperiod},
+           given={Melissa\bibnamedelima W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{2cff0016c05bcf0a10d45a95e2f6fbcd}
+      \strng{fullhash}{2b2457d64bb92b45bbd929aa31db58f6}
+      \strng{bibnamehash}{2cff0016c05bcf0a10d45a95e2f6fbcd}
+      \strng{authorbibnamehash}{2cff0016c05bcf0a10d45a95e2f6fbcd}
+      \strng{authornamehash}{2cff0016c05bcf0a10d45a95e2f6fbcd}
+      \strng{authorfullhash}{2b2457d64bb92b45bbd929aa31db58f6}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIP Conference Proceedings}
+      \field{number}{1}
+      \field{title}{Improving queuing service at McDonald's}
+      \field{volume}{1605}
+      \field{year}{2014}
+      \field{pages}{1073\bibrangedash 1078}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1063/1.4887740
+      \endverb
+      \verb{urlraw}
+      \verb https://aip.scitation.org/doi/abs/10.1063/1.4887740
+      \endverb
+      \verb{url}
+      \verb https://aip.scitation.org/doi/abs/10.1063/1.4887740
+      \endverb
+    \endentry
+    \entry{PINSKY2011447}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=49295021f3e47595bc4fab421adfc386}{%
+           family={Pinsky},
+           familyi={P\bibinitperiod},
+           given={Mark\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a11e93e0362df64e6137422fd4265757}{%
+           family={Karlin},
+           familyi={K\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=49295021f3e47595bc4fab421adfc386}{%
+           family={Pinsky},
+           familyi={P\bibinitperiod},
+           given={Mark\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a11e93e0362df64e6137422fd4265757}{%
+           family={Karlin},
+           familyi={K\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{cba224d28dfb5172b4ded6362ff8616b}
+      \strng{fullhash}{cba224d28dfb5172b4ded6362ff8616b}
+      \strng{bibnamehash}{cba224d28dfb5172b4ded6362ff8616b}
+      \strng{authorbibnamehash}{cba224d28dfb5172b4ded6362ff8616b}
+      \strng{authornamehash}{cba224d28dfb5172b4ded6362ff8616b}
+      \strng{authorfullhash}{cba224d28dfb5172b4ded6362ff8616b}
+      \strng{editorbibnamehash}{cba224d28dfb5172b4ded6362ff8616b}
+      \strng{editornamehash}{cba224d28dfb5172b4ded6362ff8616b}
+      \strng{editorfullhash}{cba224d28dfb5172b4ded6362ff8616b}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{An Introduction to Stochastic Modeling (Fourth Edition)}
+      \field{edition}{Fourth Edition}
+      \field{isbn}{978-0-12-381416-6}
+      \field{title}{9 - Queueing Systems}
+      \field{year}{2011}
+      \field{pages}{447\bibrangedash 494}
+      \range{pages}{48}
+      \verb{doi}
+      \verb 10.1016/B978-0-12-381416-6.00009-5
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/B9780123814166000095
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/B9780123814166000095
+      \endverb
+    \endentry
+    \entry{grayson}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=fd0f19b5ecaa6367399525d40fb8ccdb}{%
+           family={Grayson},
+           familyi={G\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd0f19b5ecaa6367399525d40fb8ccdb}
+      \strng{fullhash}{fd0f19b5ecaa6367399525d40fb8ccdb}
+      \strng{bibnamehash}{fd0f19b5ecaa6367399525d40fb8ccdb}
+      \strng{authorbibnamehash}{fd0f19b5ecaa6367399525d40fb8ccdb}
+      \strng{authornamehash}{fd0f19b5ecaa6367399525d40fb8ccdb}
+      \strng{authorfullhash}{fd0f19b5ecaa6367399525d40fb8ccdb}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GitLab}
+      \field{title}{team-simpy / simpy}
+      \verb{urlraw}
+      \verb https://gitlab.com/team-simpy/simpy
+      \endverb
+      \verb{url}
+      \verb https://gitlab.com/team-simpy/simpy
+      \endverb
+    \endentry
+    \entry{Gomez-Corral2002}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9226cffafebdadc27e0a3e26d21e9617}{%
+           family={G{ó}mez-Corral},
+           familyi={G\bibinithyphendelim C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9226cffafebdadc27e0a3e26d21e9617}
+      \strng{fullhash}{9226cffafebdadc27e0a3e26d21e9617}
+      \strng{bibnamehash}{9226cffafebdadc27e0a3e26d21e9617}
+      \strng{authorbibnamehash}{9226cffafebdadc27e0a3e26d21e9617}
+      \strng{authornamehash}{9226cffafebdadc27e0a3e26d21e9617}
+      \strng{authorfullhash}{9226cffafebdadc27e0a3e26d21e9617}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Queueing networks with blocking have proved useful in modelling of data communications and production lines. We study such a network consisting of a sequence of two service stations with an infinite queue allowed before the first station and no intermediate queue allowed between them. This restriction results in the blocking of the first station whenever a unit having completed its service in that station cannot enter into the second one due to the presence of another unit there. The input of units to the network is the MAP (Markovian Arrival Process). At the first station, service requirements are of phase type whereas service times at the second station are arbitrarily distributed. The focus is on the embedded process at departures. The essential tool in our analysis is the general theory on Markov renewal processes of M/G/1-type.}
+      \field{issn}{1572-9443}
+      \field{journaltitle}{Queueing Systems}
+      \field{number}{4}
+      \field{title}{A Tandem Queue with Blocking and Markovian Arrival Process}
+      \field{volume}{41}
+      \field{year}{2002}
+      \field{pages}{343\bibrangedash 370}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1023/A:1016235415066
+      \endverb
+    \endentry
+    \entry{ross2014introduction}{book}{}
+      \name{author}{1}{}{%
+        {{hash=bf5f2440b50cd085a0515d2dd4c3cf92}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Sheldon\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic press}%
+      }
+      \strng{namehash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \strng{fullhash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \strng{bibnamehash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \strng{authorbibnamehash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \strng{authornamehash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \strng{authorfullhash}{bf5f2440b50cd085a0515d2dd4c3cf92}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to probability models}
+      \field{year}{2014}
+    \endentry
+    \entry{WU2019927}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a49b17f0d19cd73da7f981c8a6fd514c}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Xiaodan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=afcb7582f3cdb950d62d38fe1bb25cbb}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=eeb22c4c3c963172219878d144374bee}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Chao-Hsien},
+           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{6dc73f03e24ba375cd3e58bbc8d334e6}
+      \strng{fullhash}{6dc73f03e24ba375cd3e58bbc8d334e6}
+      \strng{bibnamehash}{6dc73f03e24ba375cd3e58bbc8d334e6}
+      \strng{authorbibnamehash}{6dc73f03e24ba375cd3e58bbc8d334e6}
+      \strng{authornamehash}{6dc73f03e24ba375cd3e58bbc8d334e6}
+      \strng{authorfullhash}{6dc73f03e24ba375cd3e58bbc8d334e6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Balancing bed allocation is a critical but cumbersome decision-making process in hospitals due to limited capacity, fluctuations in the rate of patient arrival and service interactions among various units; typically, this will cause blockages in multi-stage healthcare services. Accurately estimating the blocking probability is an important task in order to improve the performance of healthcare systems. Early studies assumed either unlimited bed capacity or no service interaction among units. In this study, we consider the correlation between the blockage and service time of the subsequent stage and apply a multi-stage tandem-queuing model with limited bed capacity and service interactions to model healthcare systems. We develop two effective heuristics to estimate the patient-blocking probability, which are then used to develop an integrated mathematical model for bed allocation. We collect real-world data from a tertiary hospital in China to delineate the effect of service interactions while estimating the blocking probability and use non-parametric rank-sum tests to verify and compare the relative performances of the proposed model against two popular heuristics. Our comparative results illustrate that the proposed model is as accurate as simulations. We also observe that increasing the number of beds during the first stage is more effective in reducing blockage than doing so later in case of a limited number of beds.}
+      \field{issn}{0377-2217}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{number}{3}
+      \field{title}{Modeling multi-stage healthcare systems with service interactions under blocking for bed allocation}
+      \field{volume}{278}
+      \field{year}{2019}
+      \field{pages}{927\bibrangedash 941}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.ejor.2019.05.004
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0377221719303881
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0377221719303881
+      \endverb
+      \keyw{OR in healthcare services; Queuing; Hospital bed allocation; Service interactions; Blocking probability}
+    \endentry
+    \entry{Langaristwostage}{article}{}
+      \name{author}{1}{}{%
+        {{hash=80eaafd81383f582410c89b2491109d0}{%
+           family={Langaris},
+           familyi={L\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Applied Probability Trust}%
+      }
+      \strng{namehash}{80eaafd81383f582410c89b2491109d0}
+      \strng{fullhash}{80eaafd81383f582410c89b2491109d0}
+      \strng{bibnamehash}{80eaafd81383f582410c89b2491109d0}
+      \strng{authorbibnamehash}{80eaafd81383f582410c89b2491109d0}
+      \strng{authornamehash}{80eaafd81383f582410c89b2491109d0}
+      \strng{authorfullhash}{80eaafd81383f582410c89b2491109d0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00219002}
+      \field{journaltitle}{Journal of Applied Probability}
+      \field{number}{1}
+      \field{title}{The Waiting-Time Process of a Queueing System with Gamma-Type Input and Blocking}
+      \field{volume}{23}
+      \field{year}{1986}
+      \field{pages}{166\bibrangedash 174}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/3214125
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/3214125
+      \endverb
+    \endentry
+    \entry{ausinbayesian}{article}{}
+      \name{author}{1}{}{%
+        {{hash=82bde213f74c30bf4f3038ce9adc301c}{%
+           family={Ausin},
+           familyi={A\bibinitperiod},
+           given={M\bibnamedelima C},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{82bde213f74c30bf4f3038ce9adc301c}
+      \strng{fullhash}{82bde213f74c30bf4f3038ce9adc301c}
+      \strng{bibnamehash}{82bde213f74c30bf4f3038ce9adc301c}
+      \strng{authorbibnamehash}{82bde213f74c30bf4f3038ce9adc301c}
+      \strng{authornamehash}{82bde213f74c30bf4f3038ce9adc301c}
+      \strng{authorfullhash}{82bde213f74c30bf4f3038ce9adc301c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0378-3758}
+      \field{journaltitle}{Journal of Statistical Planning and Inference}
+      \field{number}{1}
+      \field{title}{Bayesian estimation for the M/G/1 queue using a phase-type approximation}
+      \field{volume}{118}
+      \field{year}{2004}
+      \field{pages}{83\bibrangedash 101}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/S0378-3758(02)00398-1
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0378375802003981
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0378375802003981
+      \endverb
+      \keyw{Queues; Bayesian mixtures; Reversible jump MCMC; Phase-type distributions; Matrix geometric methods}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\bibitem[Dharmawirya et~al.(2012)Dharmawirya, Oktadiana, and
-  Adi]{dharmawirya2012analysis}
-Mathias Dharmawirya, Hera Oktadiana, and Erwin Adi.
-\newblock Analysis of expected and actual waiting time in fast food
-  restaurants.
-\newblock \emph{Industial Engineering Letters}, 2\penalty0 (5), 2012.
-
-\bibitem[G{\'o}mez-Corral(2002)]{Gomez-Corral2002}
-A.~G{\'o}mez-Corral.
-\newblock A tandem queue with blocking and markovian arrival process.
-\newblock \emph{Queueing Systems}, 41\penalty0 (4):\penalty0 343--370, 2002.
-\newblock ISSN 1572-9443.
-\newblock \doi{10.1023/A:1016235415066}.
-
-\bibitem[Grayson()]{grayson}
-Peter Grayson.
-\newblock team-simpy / simpy.
-\newblock URL \url{https://gitlab.com/team-simpy/simpy}.
-
-\bibitem[Koh et~al.(2014)Koh, Teh, Wong, Lim, and Migin]{Kohimprovemcd}
-Hock~Lye Koh, Su~Yean Teh, Chin~Keat Wong, Hooi~Kie Lim, and Melissa~W. Migin.
-\newblock Improving queuing service at mcdonald's.
-\newblock \emph{AIP Conference Proceedings}, 1605\penalty0 (1):\penalty0
-  1073--1078, 2014.
-\newblock \doi{10.1063/1.4887740}.
-\newblock URL \url{https://aip.scitation.org/doi/abs/10.1063/1.4887740}.
-
-\bibitem[Pinsky and Karlin(2011)]{PINSKY2011447}
-Mark~A. Pinsky and Samuel Karlin.
-\newblock 9 - queueing systems.
-\newblock In Mark~A. Pinsky and Samuel Karlin, editors, \emph{An Introduction
-  to Stochastic Modeling (Fourth Edition)}, pages 447--494. Academic Press,
-  Boston, fourth edition edition, 2011.
-\newblock ISBN 978-0-12-381416-6.
-\newblock \doi{10.1016/B978-0-12-381416-6.00009-5}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/B9780123814166000095}.
-
-\bibitem[Ross(2014)]{ross2014introduction}
-Sheldon~M Ross.
-\newblock \emph{Introduction to probability models}.
-\newblock Academic press, 2014.
-
-\bibitem[Roy et~al.(2016)Roy, Bandyopadhyay, and Banerjee]{ROY201629}
-Debjit Roy, Arindam Bandyopadhyay, and Pritam Banerjee.
-\newblock A nested semi-open queuing network model for analyzing dine-in
-  restaurant performance.
-\newblock \emph{Computers \& Operations Research}, 65:\penalty0 29--41, 2016.
-\newblock ISSN 0305-0548.
-\newblock \doi{10.1016/j.cor.2015.06.006}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/S0305054815001513}.
-
-\bibitem[Wu et~al.(2019)Wu, Li, and Chu]{WU2019927}
-Xiaodan Wu, Juan Li, and Chao-Hsien Chu.
-\newblock Modeling multi-stage healthcare systems with service interactions
-  under blocking for bed allocation.
-\newblock \emph{European Journal of Operational Research}, 278\penalty0
-  (3):\penalty0 927--941, 2019.
-\newblock ISSN 0377-2217.
-\newblock \doi{10.1016/j.ejor.2019.05.004}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/S0377221719303881}.
-
-\end{thebibliography}
