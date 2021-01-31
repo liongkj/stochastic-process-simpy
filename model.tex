@@ -39,8 +39,8 @@ The simulation also assumed the customer population in the model used in this su
 In the experiment setting, the arrival rate of customers has a Poisson distribution with parameter $\lambda$, where each of them are allowed to only buy one set of food. Then, the customers will need to enter the waiting line with infinite N the customers can place order via \textbf{r} number of serving counters and the order is then sent to the kitchen to be prepared by \textbf{s} number of cooks. Each counter server and kitchen cook can only handle one task meal at a time, i.e. placing order and preparing food. Besides, the process of the customer placing order and kitchen preparing the meal are independent and has the exponential distribution with parameter $\mu$. The sequence of arrival process and placing order are all assumed to be mutually independent.
 
 The system describes the characteristics of queue system, such as the number of waiting lines, the number of server and service patterns, etc. The two variables introduced in the experiment is the queue with blocking or without blocking, before the transition to the second stage of service point (food collection) which typically arises from the problem of lacking queuing capacity between jobs \cite{Gomez-Corral2002}.
- 
-The former model is called a single-line, multiple server, multi-stage tandem-queuing model \cite{ross2014introduction} system showed in figure \ref{fig:single-phase}  and the latter is a single-line, multiple server, multi-stage wait-queuing model (M/M/s) \cite{WU2019927} showed in figure \ref{fig:multi-phase}
+
+Both model could be broken down into two stages where the first stage are identical in the sense that they have single-line, multiple server with First-come-first-serve discipline (M/M/c). The difference is multi-stage tandem-queuing model \cite{ross2014introduction} system showed in figure \ref{fig:single-phase}  and the latter  multi-stage wait-queuing model (G/M/∞) \cite{WU2019927} showed in figure \ref{fig:multi-phase}
 
 \noindent
 \begin{minipage}{\textwidth}
@@ -56,27 +56,27 @@ In this project, we will study two types of queuing method, which are as follows
 
 \begin{enumerate}[label=\roman*)]
     \item $S_1$: Single line, Multi-server, Two-stage (w/ blocking) (\autoref{fig:single-phase}) \\
-          Scenario: Customer arrival rate follows the Poisson process with the parameter $\lambda$. The arrived customer has to pass through two consecutive service point before leaving the system. The customers will enter the only one waiting line with unlimited queue space at the first stage of serving point.
-          Then, the customer will enter one of the free \textbf{r} counters and place an order but because there is no waiting space at the second stage of serving point. So the customer will need to wait at the counter while the kitchen is preparing the food.
+          Scenario: Customer arrival rate follows the Poisson process with the parameter $\lambda$. The arrived (n)th customer has to pass through two consecutive service point before leaving the system. The (n)th  customer will enter the only one waiting line with unlimited queue space at the first stage of serving point.
+          Then, the customer will enter one of the free \textbf{r} counters and place an order but because there is no waiting space at the second stage of serving point. So the (n)th customer will need to wait at the counter while the kitchen is preparing the food.
 
           The kitchen will process the resources with  first-come, first-served priority rule. The server takes order from the customer with the service rate of exponential distribution parameter $\mu_1$.
 
           Next, the order is sent to the kitchen and the customer exits the system after they make the payment and receive the food.
 
     \item $S_2$: Single line, Multi-server, Two-stage (w/o blocking) (\autoref{fig:multi-phase}) \\
-          Scenario: Customer arrival rate follows the Poisson process with the parameter $\lambda$;The arrived customer has to pass through two consecutive service point before leaving the system. The customers will enter the only one waiting line with unlimited queue space at the first stage of serving point.
-          Then, the customer will enter one of the free \textbf{r} counters and place an order but because there is no waiting space at the second stage of serving point. So the customer will need to wait at the counter while the kitchen is preparing the food.
+          Scenario: Customer arrival rate follows the Poisson process with the parameter $\lambda$; The arrived ($n$)th customer has to pass through two consecutive service point before leaving the system. The customers will enter the only one waiting line with unlimited queue space at the first stage of serving point.
+          Then, the ($n$)th customer will enter one of the free \textbf{r} counters and place an order but because there is no waiting space at the second stage of serving point. So the customer will be blocked at the counter upon finish placing the order while the kitchen is preparing the food.
 
-          The kitchen will process the resources with the first-come,first-served priority rule.  The server takes order from the customer with the service rate of exponential distribution parameter $\mu_1$.
+          The kitchen will process the resources with the first-come,first-served priority rule. The server takes order from the customer with the service rate of exponential distribution parameter $\mu_1$.
 
           After making the payment, the counter will send the order to the kitchen and starts to service the next customer whereas the customer proceeds to the collection area. The customer exits the system after they receive the food.
 \end{enumerate}
 
 \subsubsection{Model of Kitchen Process}
 Cooks are the main resources in the kitchen. We model the \textit{\textbf{s}} cooks as fixed resources.
-Once an item order arrives, it need to enter the order waiting queue, $\beta_{k}$ for a cook to be free.
-Once the order is assigned to the cook, the cook will start preparing the food next in queue and cannot  prepare other orders simultaneously. Thus, the food preparation time is modeled using the exponential distribution of parameter $\mu_2$.
-Once complete, the cook will send the food back to the counter and the process is repeated.
+Once an item order ($i$)th arrives, it need to enter the order waiting queue, $\beta_{k}$ for a cook to be free.
+Once the order is assigned to the cook, the cook will start preparing the food ($i$)th next in queue and cannot  prepare ($i+1$, $i+2$, \dots , $i_n$)th orders simultaneously. Thus, the food preparation time is modeled using the exponential distribution of parameter $\mu_2$.
+Once complete, the cook will send the ($i$)th order back to the counter and the process is repeated for ($i+1$, $i+2$, \dots , $i_n$)th order.
 
 \subsection{Performance measure}
 The project focus on few metrics to analyze the queuing system model and obtain the estimation of their corresponding performance measure. Before that, we create the following project scope and performance metrics to help us understand and identify any bottleneck found in the two systems.

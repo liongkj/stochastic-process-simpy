@@ -36,7 +36,19 @@
 \usepackage{enumitem}
 
 \usepackage[nottoc]{tocbibind}
-\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=none,
+giveninits=true]
+{biblatex}
+\DeclareNameAlias{author}{last-first}
+\addbibresource{ref.bib}
+%\usepackage{}
+%[square,sort,comma,number]
+%\bibliographystyle{humannat}
+%\setcitestyle{super, open={[},close={]}
+
 \makeatletter
 \newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
 \makeatother
@@ -130,7 +142,7 @@
 
 \geometry{
 	a4paper,
-	left=4cm,
+	left=2.5cm,
 	right=2.5cm,
 	top=2.5cm,
 	bottom=2.5cm,
@@ -151,21 +163,19 @@
 
 \section{Material and methods}
 \input{model.tex}
-
+\medskip
 \section{Results and Discussion}
 \input{results.tex}
-\pagebreak
-
-\section{Acknowledgment}
+\medskip
+\section{\textsc{Conclusion}}
+\input{conclusion.tex}
+\medskip
+\section{\textsc{Acknowledgment}}
 \input{ack.tex}
 
-\section{Conclusion}
-\input{conclusion.tex}
 \pagebreak
 
-% \section{References}
-\bibliography{ref}
-\bibliographystyle{plainnat}
+\printbibliography
 \pagebreak
 
 \pagenumbering{roman}
@@ -174,12 +184,17 @@
 \lstset{language=Python}
 \lstset{frame=lines}
 \lstset{caption={fifo.py}}
-\lstset{label={lst:code_direct}}
+\lstset{label={lst:codefifo}}
 \lstset{basicstyle=\footnotesize}
 \lstinputlisting[language=Python]{./code/fifo.py}
 
 \lstset{caption={ticket.py}}
-\lstset{label={lst:code_direct}}
+\lstset{label={lst:codeticket}}
 \lstset{basicstyle=\footnotesize}
 \lstinputlisting[language=Python]{./code/ticket.py}
-\end{document}
+
+% \lstset{caption={main.py}}
+% \lstset{label={lst:codemain}}
+% \lstset{basicstyle=\footnotesize}
+% \lstinputlisting[language=Python]{./code/main.py}
+ \end{document}

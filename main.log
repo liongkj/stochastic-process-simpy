@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.19)  28 JAN 2021 23:55
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.19)  30 JAN 2021 20:40
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -954,21 +954,240 @@ Package tocbibind Info: The document has section divisions on input line 50.
 
 Package tocbibind Note: Using section or other style headings.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip69
-\bibsep=\skip70
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count367
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count367
 )
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count368
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count369
+\c@listtotal=\count370
+\c@listcount=\count371
+\c@liststart=\count372
+\c@liststop=\count373
+\c@citecount=\count374
+\c@citetotal=\count375
+\c@multicitecount=\count376
+\c@multicitetotal=\count377
+\c@instcount=\count378
+\c@maxnames=\count379
+\c@minnames=\count380
+\c@maxitems=\count381
+\c@minitems=\count382
+\c@citecounter=\count383
+\c@maxcitecounter=\count384
+\c@savedcitecounter=\count385
+\c@uniquelist=\count386
+\c@uniquename=\count387
+\c@refsection=\count388
+\c@refsegment=\count389
+\c@maxextratitle=\count390
+\c@maxextratitleyear=\count391
+\c@maxextraname=\count392
+\c@maxextradate=\count393
+\c@maxextraalpha=\count394
+\c@abbrvpenalty=\count395
+\c@highnamepenalty=\count396
+\c@lownamepenalty=\count397
+\c@maxparens=\count398
+\c@parenlevel=\count399
+\blx@tempcnta=\count400
+\blx@tempcntb=\count401
+\blx@tempcntc=\count402
+\blx@maxsection=\count403
+\blx@maxsegment@0=\count404
+\blx@notetype=\count405
+\blx@parenlevel@text=\count406
+\blx@parenlevel@foot=\count407
+\blx@sectionciteorder@0=\count408
+\blx@entrysetcounter=\count409
+\labelnumberwidth=\skip69
+\labelalphawidth=\skip70
+\biblabelsep=\skip71
+\bibitemsep=\skip72
+\bibnamesep=\skip73
+\bibinitsep=\skip74
+\bibparsep=\skip75
+\bibhang=\skip76
+\blx@bcfin=\read4
+\blx@bcfout=\write4
+\blx@langwohyphens=\language86
+\c@mincomprange=\count410
+\c@maxcomprange=\count411
+\c@mincompwidth=\count412
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count413
+\c@savedafterword=\count414
+\c@annotator=\count415
+\c@savedannotator=\count416
+\c@author=\count417
+\c@savedauthor=\count418
+\c@bookauthor=\count419
+\c@savedbookauthor=\count420
+\c@commentator=\count421
+\c@savedcommentator=\count422
+\c@editor=\count423
+\c@savededitor=\count424
+\c@editora=\count425
+\c@savededitora=\count426
+\c@editorb=\count427
+\c@savededitorb=\count428
+\c@editorc=\count429
+\c@savededitorc=\count430
+\c@foreword=\count431
+\c@savedforeword=\count432
+\c@holder=\count433
+\c@savedholder=\count434
+\c@introduction=\count435
+\c@savedintroduction=\count436
+\c@namea=\count437
+\c@savednamea=\count438
+\c@nameb=\count439
+\c@savednameb=\count440
+\c@namec=\count441
+\c@savednamec=\count442
+\c@translator=\count443
+\c@savedtranslator=\count444
+\c@shortauthor=\count445
+\c@savedshortauthor=\count446
+\c@shorteditor=\count447
+\c@savedshorteditor=\count448
+\c@labelname=\count449
+\c@savedlabelname=\count450
+\c@institution=\count451
+\c@savedinstitution=\count452
+\c@lista=\count453
+\c@savedlista=\count454
+\c@listb=\count455
+\c@savedlistb=\count456
+\c@listc=\count457
+\c@savedlistc=\count458
+\c@listd=\count459
+\c@savedlistd=\count460
+\c@liste=\count461
+\c@savedliste=\count462
+\c@listf=\count463
+\c@savedlistf=\count464
+\c@location=\count465
+\c@savedlocation=\count466
+\c@organization=\count467
+\c@savedorganization=\count468
+\c@origlocation=\count469
+\c@savedoriglocation=\count470
+\c@origpublisher=\count471
+\c@savedorigpublisher=\count472
+\c@publisher=\count473
+\c@savedpublisher=\count474
+\c@language=\count475
+\c@savedlanguage=\count476
+\c@origlanguage=\count477
+\c@savedoriglanguage=\count478
+\c@pageref=\count479
+\c@savedpageref=\count480
+\shorthandwidth=\skip77
+\shortjournalwidth=\skip78
+\shortserieswidth=\skip79
+\shorttitlewidth=\skip80
+\shortauthorwidth=\skip81
+\shorteditorwidth=\skip82
+\locallabelnumberwidth=\skip83
+\locallabelalphawidth=\skip84
+\localshorthandwidth=\skip85
+\localshortjournalwidth=\skip86
+\localshortserieswidth=\skip87
+\localshorttitlewidth=\skip88
+\localshortauthorwidth=\skip89
+\localshorteditorwidth=\skip90
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count481
+\c@textcitetotal=\count482
+\c@textcitemaxnames=\count483
+\c@biburlbigbreakpenalty=\count484
+\c@biburlbreakpenalty=\count485
+\c@biburlnumpenalty=\count486
+\c@biburlucpenalty=\count487
+\c@biburllcpenalty=\count488
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count489
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count490
+\c@bbx:relatedtotal=\count491
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
 (/usr/share/texlive/texmf-dist/tex/latex/capt-of/capt-of.sty
 Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box111
-\beforetitleunit=\skip71
-\aftertitleunit=\skip72
+\beforetitleunit=\skip91
+\aftertitleunit=\skip92
 \ttl@plus=\dimen273
 \ttl@minus=\dimen274
 \ttl@toksa=\toks47
@@ -977,7 +1196,7 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidthfirst=\dimen277
 )
 \@float@every@eqfloat=\toks48
-Package hyperref Info: Option `colorlinks' set `true' on input line 125.
+Package hyperref Info: Option `colorlinks' set `true' on input line 137.
 
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -985,9 +1204,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count368
-\Gm@cntv=\count369
-\c@Gm@tempcnt=\count370
+\Gm@cnth=\count492
+\Gm@cntv=\count493
+\c@Gm@tempcnt=\count494
 \Gm@bindingoffset=\dimen278
 \Gm@wd@mp=\dimen279
 \Gm@odd@mp=\dimen280
@@ -1000,11 +1219,13 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
+)
 
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count371
-))
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count495
+\@quotereset=\count496
 
 LaTeX Warning: Unused global option(s):
     [11].
@@ -1013,50 +1234,47 @@ LaTeX Warning: Unused global option(s):
 
 LaTeX Warning: Label `bar' multiply defined.
 
-
-LaTeX Warning: Label `lst:code_direct' multiply defined.
-
 )
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 13
-8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 150.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 15
+0.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count372
+\scratchcounter=\count497
 \scratchdimen=\dimen286
 \scratchbox=\box112
-\nofMPsegments=\count373
-\nofMParguments=\count374
+\nofMPsegments=\count498
+\nofMParguments=\count499
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count375
+\MPscratchCnt=\count500
 \MPscratchDim=\dimen287
-\MPnumerator=\count376
-\makeMPintoPDFobject=\count377
+\MPnumerator=\count501
+\makeMPintoPDFobject=\count502
 \everyMPtoPDFconversion=\toks51
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1068,7 +1286,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
 \AtBeginShipoutBox=\box113
-Package hyperref Info: Link coloring ON on input line 138.
+Package hyperref Info: Link coloring ON on input line 150.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1079,80 +1297,80 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count378
+\c@section@level=\count503
 )
-LaTeX Info: Redefining \ref on input line 138.
-LaTeX Info: Redefining \pageref on input line 138.
-LaTeX Info: Redefining \nameref on input line 138.
+LaTeX Info: Redefining \ref on input line 150.
+LaTeX Info: Redefining \pageref on input line 150.
+LaTeX Info: Redefining \nameref on input line 150.
 
 (./main.out) (./main.out)
-\@outlinefile=\write4
+\@outlinefile=\write5
 
-\openout4 = main.out
+\openout5 = main.out
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 138.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 138.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 138.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 138.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 138.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 138.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 138.
-LaTeX Font Info:    Redeclaring math accent \check on input line 138.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 138.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 138.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 138.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 138.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 150.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 150.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 150.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 150.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 150.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 150.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 150.
+LaTeX Font Info:    Redeclaring math accent \check on input line 150.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 150.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 150.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 150.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 150.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 138.
+(Font)              `operators' in the math version `normal' on input line 150.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 13
-8.
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 15
+0.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 138.
+(Font)              `operators' in the math version `bold' on input line 150.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 1
-38.
+50.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on i
-nput line 138.
+nput line 150.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 
-138.
+150.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 1
-38.
+50.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 138.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 150.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/pcr/m/n on input line 138.
+(Font)                  OT1/cmtt/m/n --> TU/pcr/m/n on input line 150.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on i
-nput line 138.
+nput line 150.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input line
- 138.
+ 150.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 138.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 150.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/pcr/b/n on input line 138.
-\c@lstlisting=\count379
+(Font)                  OT1/cmtt/m/n --> TU/pcr/b/n on input line 150.
+\c@lstlisting=\count504
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1162,7 +1380,23 @@ Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
 
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+
+\openout4 = main.bcf
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 150.
+Package biblatex Info: Reference segment=0 on input line 150.
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
@@ -1171,14 +1405,14 @@ Package caption Info: End \AtBeginDocument code.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(113.81102pt, 412.56497pt, 71.13188pt)
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
 * v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=412.56497pt
+* \textwidth=455.24411pt
 * \textheight=702.78308pt
-* \oddsidemargin=41.54103pt
-* \evensidemargin=41.54103pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -1210,42 +1444,46 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/p
 dftex.map}] (./main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-\tf@toc=\write5
+)
 
-\openout5 = main.toc
- [1]
-(./introduction.tex
+LaTeX Font Warning: Font shape `TU/lmss/bx/sc' undefined
+(Font)              using `TU/lmss/bx/n' instead on input line 32.
+
+)
+\tf@toc=\write6
+
+\openout6 = main.toc
+ [1] (./introduction.tex
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
 (Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 7.
 ) (./model.tex [1
 
 ] [2]
-<images/queue_model_1.png, id=150, 741.77126pt x 240.9pt>
+<images/queue_model_1.png, id=145, 741.77126pt x 240.9pt>
 File: images/queue_model_1.png Graphic file (type png)
 <use images/queue_model_1.png>
 Package luatex.def Info: images/queue_model_1.png  used on input line 47.
-(luatex.def)             Requested size: 412.56497pt x 133.98778pt.
+(luatex.def)             Requested size: 455.24411pt x 147.84935pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 48.
 See the caption package documentation for explanation.
 
-<images/queue_model.png, id=151, 1478.52374pt x 443.6575pt>
+<images/queue_model.png, id=146, 1478.52374pt x 443.6575pt>
 File: images/queue_model.png Graphic file (type png)
 <use images/queue_model.png>
 Package luatex.def Info: images/queue_model.png  used on input line 51.
-(luatex.def)             Requested size: 412.56497pt x 123.79675pt.
+(luatex.def)             Requested size: 455.24411pt x 136.60495pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 52.
@@ -1259,93 +1497,117 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 45--54
 [3<./images/queue_model_1.png><./images/queue_model.png>]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 76.
- [4]) (./results.tex
-<images/utilization_percentage.png, id=174, 433.62pt x 289.08pt>
+) [4] (./results.tex
+<images/utilization_percentage.png, id=170, 433.62pt x 289.08pt>
 File: images/utilization_percentage.png Graphic file (type png)
 <use images/utilization_percentage.png>
 Package luatex.def Info: images/utilization_percentage.png  used on input line 3
-4.
-(luatex.def)             Requested size: 412.56497pt x 275.0567pt.
+8.
+(luatex.def)             Requested size: 318.66948pt x 212.4558pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 35.
+(caption)                particular \caption on input line 39.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 32--37
-$[]$ 
+Overfull \hbox (30.0pt too wide) in paragraph at lines 36--43
+[]$[]$ 
  []
 
-[5]
-<images/mean_queue_length.png, id=183, 722.7pt x 361.35pt>
+[5<./images/utilization_percentage.png>]
+<images/mean_queue_length.png, id=181, 722.7pt x 361.35pt>
 File: images/mean_queue_length.png Graphic file (type png)
 <use images/mean_queue_length.png>
-Package luatex.def Info: images/mean_queue_length.png  used on input line 46.
-(luatex.def)             Requested size: 412.56497pt x 206.28041pt.
+Package luatex.def Info: images/mean_queue_length.png  used on input line 51.
+(luatex.def)             Requested size: 455.24411pt x 227.62413pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 47.
+(caption)                particular \caption on input line 52.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 44--49
+Overfull \hbox (30.0pt too wide) in paragraph at lines 49--54
 $[]$ 
  []
 
-[6<./images/utilization_percentage.png><./images/mean_queue_length.png>]
-<images/mean_time_in_system.png, id=193, 722.7pt x 361.35pt>
+<images/mean_time_in_system.png, id=182, 722.7pt x 361.35pt>
 File: images/mean_time_in_system.png Graphic file (type png)
 <use images/mean_time_in_system.png>
-Package luatex.def Info: images/mean_time_in_system.png  used on input line 58.
-(luatex.def)             Requested size: 412.56497pt x 206.28041pt.
-
+Package luatex.def Info: images/mean_time_in_system.png  used on input line 63.
+(luatex.def)             Requested size: 455.24411pt x 227.62413pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 59.
+(caption)                particular \caption on input line 64.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 56--61
+Overfull \hbox (30.0pt too wide) in paragraph at lines 61--66
 $[]$ 
  []
 
-<images/mean_waiting.png, id=195, 722.7pt x 361.35pt>
+<images/mean_waiting.png, id=184, 722.7pt x 361.35pt>
 File: images/mean_waiting.png Graphic file (type png)
 <use images/mean_waiting.png>
-Package luatex.def Info: images/mean_waiting.png  used on input line 67.
-(luatex.def)             Requested size: 412.56497pt x 206.28041pt.
+Package luatex.def Info: images/mean_waiting.png  used on input line 72.
+(luatex.def)             Requested size: 455.24411pt x 227.62413pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 68.
+(caption)                particular \caption on input line 73.
 See the caption package documentation for explanation.
 
-) [7<./images/mean_time_in_system.png><./images/mean_waiting.png>] (./ack.tex)
-(./conclusion.tex) [8] (./main.bbl
-LaTeX Font Info:    Trying to load font information for TU+pcr on input line 39.
 
-LaTeX Font Info:    No file TUpcr.fd. on input line 39.
+Overfull \hbox (30.0pt too wide) in paragraph at lines 70--75
+$[]$ 
+ []
 
+[6<./images/mean_queue_length.png><./images/mean_time_in_system.png>]
+<images/service_distribution.png, id=196, 722.7pt x 361.35pt>
+File: images/service_distribution.png Graphic file (type png)
+<use images/service_distribution.png>
+Package luatex.def Info: images/service_distribution.png  used on input line 82.
+
+(luatex.def)             Requested size: 455.24411pt x 227.62413pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 83.
+See the caption package documentation for explanation.
+
+) (./conclusion.tex) [7<./images/mean_waiting.png><./images/service_distribution
+.png>] (./ack.tex) [8]
+
+Package biblatex Warning: Name format 'last-first' deprecated.
+(biblatex)                Please use 'family-given' instead.
+(biblatex)                Using 'family-given' now.
+
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 178.
+
+LaTeX Font Info:    Trying to load font information for TU+pcr on input line 178
+.
+LaTeX Font Info:    No file TUpcr.fd. on input line 178.
 
 LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 39.
+(Font)              using `TU/lmr/m/n' instead on input line 178.
 
-) [9] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[9] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
-put line 179.
+put line 189.
 
 (./code/fifo.py [1] [2]) (./code/ticket.py [3] [4])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9504553E3413540DC5DAFBD162134A4F;3204.
+(rerunfilecheck)             Checksum: 3B1A58ED1F478E11956064181C7C2ED7;3222.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1353,38 +1615,42 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
+Package logreq Info: Writing requests to 'main.run.xml'.
+
+\openout1 = main.run.xml
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27752 strings out of 480991
- 381565,1373583 words of node,token memory allocated
- 607 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 13 attribute, 70 glue_spec
-, 8 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:8,2:13766,3:218,4:6765,5:6206,6:59,7:13661,8:84,9:18612,10:39,
-11:968
- 44002 multiletter control sequences out of 65536+600000
- 74 fonts using 9733571 bytes
- 46i,10n,80p,1192b,1146s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 34150 strings out of 480991
+ 381551,1648299 words of node,token memory allocated
+ 712 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 23 attribute, 79 glue_spec
+, 13 attribute_list, 1 write, 6 pdf_action nodes
+   avail lists: 1:7,2:13901,3:271,4:6817,5:6292,6:60,7:14009,8:96,9:18883,10:41,
+11:982
+ 50302 multiletter control sequences out of 65536+600000
+ 76 fonts using 9995347 bytes
+ 46i,10n,80p,1511b,1702s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></us
 r/share/texlive/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/
-share/fonts/msttcore/times.ttf></usr/share/texlive/texmf-dist/fonts/opentype/pub
-lic/lm/lmsans10-oblique.otf></usr/share/texlive/texmf-dist/fonts/opentype/public
-/lm/lmsans10-boldoblique.otf></usr/share/texlive/texmf-dist/fonts/opentype/publi
-c/lm/lmsans9-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm
-/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lm
-sans10-bold.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans17
--regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans12-re
-gular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (16 pages, 306950 bytes).
+share/texlive/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></us
+r/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/s
+hare/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-boldoblique.otf></usr/
+share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans9-regular.otf></usr/shar
+e/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/t
+exlive/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texlive
+/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texlive/te
+xmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb>
+Output written on main.pdf (16 pages, 313072 bytes).
 
-PDF statistics: 574 PDF objects out of 1000 (max. 8388607)
- 504 compressed objects within 6 object streams
- 295 named destinations out of 1000 (max. 131072)
- 145 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 590 PDF objects out of 1000 (max. 8388607)
+ 518 compressed objects within 6 object streams
+ 298 named destinations out of 1000 (max. 131072)
+ 137 words of extra memory for PDF output out of 10000 (max. 100000000)
 

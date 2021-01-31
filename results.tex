@@ -1,4 +1,4 @@
-In the simulation, the system with stage blocking are assigned to the name \textbf{FIFO} whereas the system without stage blocking are assigned with the name \textbf{TICKET}
+In the simulation, the system with stage blocking are assigned to the name \textbf{FIFO} whereas the system without stage blocking are assigned with the name \textbf{TICKET}.
 \subsection{System utilization rate}
 With $\lambda = 3$, $\mu = 1.5$ we plot the graph of how the number of servers affect the efficiency of each server. We can observe that \textbf{FIFO} system has lower utilization percentage (high idle times) because of the blocking mechanism at the second stage. The server resource is idle but it is blocked therefore it cannot process take order from another customer. In business context, this idling duration translates to business cost. Thus, the \textbf{TICKET} system with a waiting line in between the two stages can eventually maximize the resource utilization hence reaching the goal of 1000 customers served about 40\% faster compared to \textbf{FIFO}. 
 
@@ -11,6 +11,8 @@ The results are tabulated in table \ref{Tab:MainResults} with the parameters, $\
  \begin{tabular}{|c|c|c|}
  	\hline
  	& \textbf{FIFO} & \textbf{TICKET}\\
+ 	\hline
+ 	time unit & \multicolumn{2}{c|}{minute}\\
  	\hline
  	Total Simulation Time & 909 & 513 \\
  	\hline
@@ -30,11 +32,14 @@ The results are tabulated in table \ref{Tab:MainResults} with the parameters, $\
 \end{table}
 
 \noindent
-\begin{minipage}{\textwidth}
-    \includegraphics[width=\textwidth]{images/utilization_percentage.png}
-    \captionof{figure}{$\rho$ = Relationship between $\lambda$ and system utilization percentage}\label{utilization_percentage}
-\end{minipage}
 
+\begin{minipage}{\textwidth}
+	\begin{center}
+    \includegraphics[width=0.7\columnwidth]{images/utilization_percentage.png}
+    \captionof{figure}{$\rho$ = Relationship between $\lambda$ and system utilization percentage}\label{utilization_percentage}
+
+\end{center}
+\end{minipage}
 \subsection{The average number of customers waiting in line}
 
 The simulation results in left diagram in \ref{mean_queue_length} shows that average queue length of \textbf{FIFO} has the higher exponential rate of increase when arrival rate $\lambda$ increases compared to the \textbf{TICKET} system. The right graph also showed similar results when the service rate $\mu$ decreases, customers in \textbf{FIFO} system will have higher probability of facing longer queue. 
@@ -56,7 +61,7 @@ The average time of a customer spend in the system includes both queuing and ser
 \noindent
 \begin{minipage}{\textwidth}
     \includegraphics[width=\textwidth]{images/mean_time_in_system.png}
-    \captionof{figure}{$L_Q$ = Average time in system}\label{bar}
+    \captionof{figure}{$W_Q$ = Average time in system}\label{bar}
 \end{minipage}
 \subsection{Average time of a customer spend waiting}
 
@@ -65,5 +70,15 @@ The average time of a customer spend waiting includes both queuing and food coll
 \noindent
 \begin{minipage}{\textwidth}
     \includegraphics[width=\textwidth]{images/mean_waiting.png}
-    \captionof{figure}{$L_Q$ = Average time spend waiting}\label{bar}
+    \captionof{figure}{$W_Q$ = Average time spend waiting}\label{bar}
+\end{minipage}
+
+\subsection{Average Service Times and its Distribution}
+
+As we discussed earlier, the model has two service rate, $\mu_1$ and $\mu_2$ which both follows the exponential distribution as shown in the left graph \ref{fig:service}. Indeed, when the service times from two stages are combined, the simulation result shows an Erlang distribution as proved in previous studies \cite{Langaristwostage,ausinbayesian}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\includegraphics[width=\textwidth]{images/service_distribution.png}
+	\captionof{figure}{= Service Times and its distribution}\label{fig:service}
 \end{minipage}

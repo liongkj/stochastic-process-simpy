@@ -1,49 +1,19 @@
-This is BibTeX, Version 0.99d (TeX Live 2020)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: main.aux
-The style file: plainnat.bst
-Database file #1: ref.bib
-Warning--empty journal in adan2002queueing
-Warning--empty year in grayson
-You've used 10 entries,
-            2773 wiz_defined-function locations,
-            674 strings with 6900 characters,
-and the built_in function-call counts, 4779 in all, are:
-= -- 448
-> -- 257
-< -- 6
-+ -- 87
-- -- 77
-* -- 392
-:= -- 750
-add.period$ -- 44
-call.type$ -- 10
-change.case$ -- 55
-chr.to.int$ -- 10
-cite$ -- 22
-duplicate$ -- 211
-empty$ -- 383
-format.name$ -- 91
-if$ -- 996
-int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 10
-newline$ -- 71
-num.names$ -- 42
-pop$ -- 98
-preamble$ -- 1
-purify$ -- 45
-quote$ -- 0
-skip$ -- 163
-stack$ -- 0
-substring$ -- 177
-swap$ -- 18
-text.length$ -- 1
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 105
-warning$ -- 2
-while$ -- 44
-width$ -- 0
-write$ -- 161
-(There were 2 warnings)
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[75] biber:322> INFO - === Sat Jan 30, 2021, 20:36:22
+[87] Biber.pm:415> INFO - Reading 'main.bcf'
+[158] Biber.pm:943> INFO - Found 12 citekeys in bib section 0
+[173] Biber.pm:4256> INFO - Processing section 0
+[174] Utils.pm:75> INFO - Globbing data source 'ref.bib'
+[174] Utils.pm:91> INFO - Globbed data source 'ref.bib' to ref.bib
+[183] Biber.pm:4455> INFO - Looking for bibtex format file 'ref.bib' for section 0
+[184] bibtex.pm:1653> INFO - LaTeX decoding ...
+[203] bibtex.pm:1471> INFO - Found BibTeX data source 'ref.bib'
+[311] Utils.pm:304> WARN - BibTeX subsystem: /tmp/biber_tmp_arMB/ref.bib_45979.utf8, line 73, warning: 8 characters of junk seen at toplevel
+[329] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[329] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[329] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[329] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[341] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[347] bbl.pm:755> INFO - Output to main.bbl
+[347] Biber.pm:128> INFO - WARNINGS: 1
