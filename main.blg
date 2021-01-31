@@ -5,45 +5,45 @@ The style file: plainnat.bst
 Database file #1: ref.bib
 Warning--empty journal in adan2002queueing
 Warning--empty year in grayson
-You've used 9 entries,
+You've used 10 entries,
             2773 wiz_defined-function locations,
-            666 strings with 6634 characters,
-and the built_in function-call counts, 4228 in all, are:
-= -- 399
-> -- 218
+            674 strings with 6900 characters,
+and the built_in function-call counts, 4779 in all, are:
+= -- 448
+> -- 257
 < -- 6
-+ -- 74
-- -- 65
-* -- 341
-:= -- 664
-add.period$ -- 41
-call.type$ -- 9
-change.case$ -- 48
-chr.to.int$ -- 9
-cite$ -- 20
-duplicate$ -- 190
-empty$ -- 343
-format.name$ -- 78
-if$ -- 884
++ -- 87
+- -- 77
+* -- 392
+:= -- 750
+add.period$ -- 44
+call.type$ -- 10
+change.case$ -- 55
+chr.to.int$ -- 10
+cite$ -- 22
+duplicate$ -- 211
+empty$ -- 383
+format.name$ -- 91
+if$ -- 996
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 9
-newline$ -- 66
-num.names$ -- 38
-pop$ -- 86
+missing$ -- 10
+newline$ -- 71
+num.names$ -- 42
+pop$ -- 98
 preamble$ -- 1
-purify$ -- 39
+purify$ -- 45
 quote$ -- 0
-skip$ -- 147
+skip$ -- 163
 stack$ -- 0
-substring$ -- 150
-swap$ -- 17
+substring$ -- 177
+swap$ -- 18
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 94
+type$ -- 105
 warning$ -- 2
-while$ -- 39
+while$ -- 44
 width$ -- 0
-write$ -- 148
+write$ -- 161
 (There were 2 warnings)

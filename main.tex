@@ -40,7 +40,7 @@
 \makeatletter
 \newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
 \makeatother
-
+\usepackage{listings}
 \usepackage{capt-of} %image caption
 \captionsetup[figure]{name={Fig.},labelsep=period}
 
@@ -156,6 +156,9 @@
 \input{results.tex}
 \pagebreak
 
+\section{Acknowledgment}
+\input{ack.tex}
+
 \section{Conclusion}
 \input{conclusion.tex}
 \pagebreak
@@ -167,6 +170,16 @@
 
 \pagenumbering{roman}
 
+\section{Appendix: Source code for simulation}
+\lstset{language=Python}
+\lstset{frame=lines}
+\lstset{caption={fifo.py}}
+\lstset{label={lst:code_direct}}
+\lstset{basicstyle=\footnotesize}
+\lstinputlisting[language=Python]{./code/fifo.py}
 
-
+\lstset{caption={ticket.py}}
+\lstset{label={lst:code_direct}}
+\lstset{basicstyle=\footnotesize}
+\lstinputlisting[language=Python]{./code/ticket.py}
 \end{document}
